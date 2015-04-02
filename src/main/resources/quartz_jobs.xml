@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<quartz>
+
+	<!-- <job>
+		<job-detail>
+			<name>ScanDirectory</name>
+			<group>DEFAULT</group>
+			<description>
+				A job that scans a directory for files
+			</description>
+			<job-class>
+				cn.edu.ahpu.quartz.demo.chap3.ScanDirectoryJob
+			</job-class>
+			<volatility>false</volatility>
+			<durability>false</durability>
+			<recover>false</recover>
+			<job-data-map allows-transient-data="true">
+				<entry>
+					<key>SCAN_DIR</key>
+					<value>c:\quartz-book\input</value>
+				</entry>
+			</job-data-map>
+		</job-detail>
+
+		<trigger> <simple> <name>scanTrigger</name> <group>DEFAULT</group> 
+			<job-name>ScanDirectory</job-name> <job-group>DEFAULT</job-group> <start-time>2015-03-27T10:45:00</start-time> 
+			repeat indefinitely every 10 seconds <repeat-count>-1</repeat-count> <repeat-interval>10000</repeat-interval> 
+			</simple> </trigger>
+
+		<trigger>
+			<cron>
+				<name>scanTrigger</name>
+				<group>DEFAULT</group>
+				<job-name>ScanDirectory</job-name>
+				<job-group>DEFAULT</job-group>
+				
+				 Fire 7:30am Monday through Friday  
+     <cron-expression>0/15 * 14-20 * * ?</cron-expression>  
+			</cron>
+		</trigger>
+
+	</job> -->
+</quartz>  
